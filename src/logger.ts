@@ -1,6 +1,5 @@
-import { v4 as uuidv4 } from "uuid";
-import { getCorrelationId } from "./utils/correlation";
 import { consoleTransport } from "./transports/console";
+import { getCorrelationId } from "./utils/correlation";
 
 export type LogLevel = "info" | "warn" | "error" | "debug";
 

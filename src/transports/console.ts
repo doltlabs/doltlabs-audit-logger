@@ -1,3 +1,4 @@
+ 
 import type { LogEntry } from "../logger";
 
 export function consoleTransport(entry: LogEntry) {

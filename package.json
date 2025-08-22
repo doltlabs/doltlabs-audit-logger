@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-   "files": [
+  "type": "module",
+  "files": [
     "dist"
   ],
   "scripts": {
@@ -13,6 +14,7 @@
     "dev": "tsup src/index.ts --dts --watch",
     "test": "vitest run",
     "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
     "prepare": "husky install",
     "prepublishOnly": "npm run build && npm test"
   },
@@ -39,11 +41,12 @@
   "devDependencies": {
     "@types/node": "^22.5.0",
     "@types/uuid": "^10.0.0",
-    "eslint": "^9.0.0",
+    "eslint": "^9.33.0",
     "husky": "^9.0.0",
     "jest": "^30.0.5",
     "tsup": "^8.0.0",
-    "typescript": "^5.6.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.40.0",
     "vitest": "^2.0.0"
   },
   "dependencies": {

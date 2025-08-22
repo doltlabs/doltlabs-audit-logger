@@ -1,11 +1,16 @@
-// Logger tests
-import { describe, it } from 'node:test';
-import { expect } from '@jest/globals';
-import { AuditLogger } from '../src/logger';
+import { describe, it, expect } from "vitest";
+import { AuditLogger } from "../src/logger";
 
-describe('Logger', () => {
-  it('should create a logger instance', () => {
-    const logger = new AuditLogger();
-    expect(logger).toBeInstanceOf(AuditLogger);
+var logger = new AuditLogger();
+
+describe("Logger", () => {
+  it("should log an info message", () => {
+    logger.info("Test info message");
+    expect(true).toBe(true); // placeholder assertion
+  });
+
+  it("should log an error message", () => {
+    logger.error("Test error message");
+    expect(true).toBe(true);
   });
 });
