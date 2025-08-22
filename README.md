@@ -1,7 +1,7 @@
 # @doltlabs/audit-log
 
 [![npm version](https://img.shields.io/npm/v/@doltlabs/audit-log.svg)](https://www.npmjs.com/package/@doltlabs/audit-log)
-[![Build Status](https://github.com/doltlabs/audit-log/actions/workflows/ci.yml/badge.svg)](https://github.com/doltlabs/audit-log/actions)
+[![Build Status](https://github.com/doltlabs/audit-log/.github/workflows/ci.yml/badge.svg)](https://github.com/doltlabs/audit-log/actions)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 > Lightweight audit logger with structured JSON output, correlation IDs, and pluggable transports.  
