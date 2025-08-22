@@ -1,0 +1,32 @@
+# Ignore build configs and metadata
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+.eslintrc.*
+.prettierrc*
+.prettierignore
+eslint.config.js
+*.log
+
+# Ignore dev & CI files
+.github/
+.vscode/
+.idea/
+*.iml
+
+# Ignore test sources
+tests/
+__tests__/
+coverage/
+
+# Ignore local env files
+.env
+.env.*
+
+# Ignore cache and lockfiles
+node_modules/
+*.tsbuildinfo
+*.lock
+
+# Ignore source — we only ship dist/
+src/

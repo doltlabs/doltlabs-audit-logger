@@ -1,0 +1,58 @@
+{
+  "name": "@doltlabs/audit-log",
+  "version": "0.1.0",
+  "description": "Lightweight audit logger with structured JSON output, correlation IDs, and extensible transports.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+   "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format cjs,esm",
+    "dev": "tsup src/index.ts --dts --watch",
+    "test": "vitest run",
+    "lint": "eslint . --ext .ts",
+    "prepare": "husky install",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "logger",
+    "audit",
+    "json",
+    "structured-logging",
+    "correlation-id",
+    "winston",
+    "pino",
+    "microservices"
+  ],
+  "author": "Dolt Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doltlabs/audit-log.git"
+  },
+  "bugs": {
+    "url": "https://github.com/doltlabs/audit-log/issues"
+  },
+  "homepage": "https://github.com/doltlabs/audit-log#readme",
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "@types/uuid": "^10.0.0",
+    "eslint": "^9.0.0",
+    "husky": "^9.0.0",
+    "jest": "^30.0.5",
+    "tsup": "^8.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.0.0"
+  },
+  "dependencies": {
+    "uuid": "^11.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
