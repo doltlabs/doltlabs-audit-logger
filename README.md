@@ -1,3 +1,4 @@
+![Dolt Labs Audit Log](https://raw.githubusercontent.com/doltlabs/doltlabs-audit-logger/2f9ed31b3b802d50a9a899d0fe24f5c2d72fa2c6/doltlabs-audit-log-repo-card.png "Dolt Labs Audit Log")
 # @doltlabs/audit-log
 
 [![npm version](https://img.shields.io/npm/v/@doltlabs/audit-log.svg)](https://www.npmjs.com/package/@doltlabs/audit-log)
